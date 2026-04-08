@@ -1,6 +1,6 @@
-# My SWE Calendar Project 🗓️
+# My SWE Calendar Project 
 
-Hey there! 👋 Welcome to my wall calendar project. I built this using React 18 and Vite because I wanted a simple, interactive calendar without pulling in huge frameworks like Next.js or heavy UI libraries. Just clean, straightforward code.
+Hey there! wlcm to my wall calendar project. I built this using React 18 and Vite because I wanted a simple, interactive calendar without pulling in huge frameworks like Next.js or heavy UI libraries. Just clean, straightforward code.
 
 ## What it does
 
