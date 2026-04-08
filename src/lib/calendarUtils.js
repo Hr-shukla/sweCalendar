@@ -46,6 +46,7 @@ export const PLACEHOLDER_IMAGE_CANDIDATES = [
   "/images/placeholder.png",
   "/images/placeholder.jpg",
   "/images/placeholder.jpeg",
+  
 ];
 
 export function buildCells(year, month) {
