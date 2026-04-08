@@ -1,0 +1,16 @@
+{
+  "name": "SWE Wall Calendar",
+  "short_name": "Calendar",
+  "description": "Wall-style calendar app with range notes and themes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0eeeb",
+  "theme_color": "#3d5a73",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

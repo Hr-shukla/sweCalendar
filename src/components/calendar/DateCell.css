@@ -1,0 +1,104 @@
+.calendar-date-cell {
+  text-align: center;
+  font-size: 13px;
+  padding: 4px 2px 3px;
+  border-radius: 7px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.12s, outline-color 0.12s, color 0.12s;
+  position: relative;
+  min-width: 0;
+  color: #222;
+}
+
+.calendar-date-cell.tone-other {
+  color: #c0c0c0;
+  cursor: default;
+}
+
+.calendar-date-cell.tone-selected {
+  color: #fff;
+}
+
+.calendar-date-cell.tone-accent {
+  color: var(--cal-accent);
+}
+
+.calendar-date-cell.tone-sun {
+  color: var(--cal-sun);
+}
+
+.calendar-date-cell.is-selected {
+  background: var(--cal-accent);
+}
+
+.calendar-date-cell.is-in-range {
+  background: rgba(var(--cal-accent-rgb), 0.13);
+}
+
+.calendar-date-cell.is-preview-range {
+  background: rgba(var(--cal-accent-rgb), 0.1);
+  outline: 1px dashed rgba(var(--cal-accent-rgb), 0.52);
+  outline-offset: -1px;
+}
+
+.calendar-date-cell.range-start {
+  border-radius: 7px 0 0 7px;
+}
+
+.calendar-date-cell.range-end {
+  border-radius: 0 7px 7px 0;
+}
+
+.calendar-date-cell.range-middle {
+  border-radius: 0;
+}
+
+.calendar-date-cell.range-single {
+  border-radius: 7px;
+}
+
+.calendar-day-number {
+  width: 27px;
+  height: 27px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.calendar-day-number.is-today {
+  background: var(--cal-accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.calendar-note-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 1px auto 0;
+  background: var(--cal-accent);
+}
+
+.calendar-note-dot.selected {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.calendar-holiday-label {
+  font-size: 8px;
+  line-height: 1.2;
+  margin-top: 1px;
+  color: var(--cal-sun);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 2px;
+}
+
+.calendar-holiday-label.selected {
+  color: rgba(255, 255, 255, 0.85);
+}
