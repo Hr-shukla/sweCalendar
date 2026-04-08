@@ -33,7 +33,7 @@ const MONTH_SLUGS = [
 ];
 
 export const getMonthImagePath = (monthIndex, extension = "png") =>
-  `/images/${MONTH_SLUGS[monthIndex]}.${extension}`;
+  `${import.meta.env.BASE_URL}images/${MONTH_SLUGS[monthIndex]}.${extension}`;
 
 export const getMonthImageCandidates = (monthIndex) => [
   getMonthImagePath(monthIndex, "png"),
@@ -41,11 +41,11 @@ export const getMonthImageCandidates = (monthIndex) => [
   getMonthImagePath(monthIndex, "jpeg"),
 ];
 
-export const PLACEHOLDER_IMAGE = "/images/placeholder.png";
+export const PLACEHOLDER_IMAGE = `${import.meta.env.BASE_URL}images/placeholder.png`;
 export const PLACEHOLDER_IMAGE_CANDIDATES = [
-  "/images/placeholder.png",
-  "/images/placeholder.jpg",
-  "/images/placeholder.jpeg",
+  `${import.meta.env.BASE_URL}images/placeholder.png`,
+  `${import.meta.env.BASE_URL}images/placeholder.jpg`,
+  `${import.meta.env.BASE_URL}images/placeholder.jpeg`,
   
 ];
 
